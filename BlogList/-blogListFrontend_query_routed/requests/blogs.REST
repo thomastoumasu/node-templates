@@ -1,0 +1,44 @@
+
+GET http://localhost:3003/api/blogs
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRob21hcyIsImlkIjoiNjhhNGJkM2U3ODMxZDA2ZTlhMjNlNzk0IiwiaWF0IjoxNzU1NjcwODIxfQ.XQ4P3uR9WtmqkaQjjwXtwlMjf4soSHxSDERx0jHFnjg
+
+### careful with POST, do not add an empty line before the headers
+POST http://localhost:3003/api/blogs/68c06a934a81d8d2a8cb8e24/comments
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRob21hcyIsImlkIjoiNjhhNGJkM2U3ODMxZDA2ZTlhMjNlNzk0IiwiaWF0IjoxNzU1NjcwODIxfQ.XQ4P3uR9WtmqkaQjjwXtwlMjf4soSHxSDERx0jHFnjg
+
+{
+  "newComment": "another nice comment"
+}
+
+### careful with POST, do not add an empty line before the headers
+POST http://localhost:3003/api/blogs/ 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRob21hcyIsImlkIjoiNjhhNGJkM2U3ODMxZDA2ZTlhMjNlNzk0IiwiaWF0IjoxNzU1NjcwODIxfQ.XQ4P3uR9WtmqkaQjjwXtwlMjf4soSHxSDERx0jHFnjg
+
+{
+  "title": "blog1",
+  "author": "t1t1",
+  "url": "testURL",
+  "user": "",
+  "likes": 1
+}
+
+###
+POST http://localhost:3003/api/blogs/ 
+Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRob21hcyIsImlkIjoiNjhhNGJkM2U3ODMxZDA2ZTlhMjNlNzk0IiwiaWF0IjoxNzU1NjcwODIxfQ.XQ4P3uR9WtmqkaQjjwXtwlMjf4soSHxSDERx0jHFnjg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF5YW1lIiwiaWQiOiI2OGE0YmQ0NDc4MzFkMDZlOWEyM2U3OTYiLCJpYXQiOjE3NTU2MjY5OTl9.BW3LpV1ViR83ZI7dfggWg1St6ZVa_pCDc5r80U4BXuw
+
+{
+  "title": "blog2",
+  "author": "t2t2",
+  "url": "testURL",
+  "likes": 2
+}
+
+###
+DELETE http://localhost:3003/api/blogs/68a4bf267831d06e9a23e7d6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRob21hcyIsImlkIjoiNjhhNGJkM2U3ODMxZDA2ZTlhMjNlNzk0IiwiaWF0IjoxNzU1NjcwODIxfQ.XQ4P3uR9WtmqkaQjjwXtwlMjf4soSHxSDERx0jHFnjg
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImF5YW1lIiwiaWQiOiI2OGE0YmQ0NDc4MzFkMDZlOWEyM2U3OTYiLCJpYXQiOjE3NTU2MjY5OTl9.BW3LpV1ViR83ZI7dfggWg1St6ZVa_pCDc5r80U4BXuw

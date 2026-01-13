@@ -1,0 +1,35 @@
+### careful with POST, do not add an empty line before the headers
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "thomas",
+  "password": "aHgGd"
+}
+
+### careful with POST, do not add an empty line before the headers
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "ayame",
+  "password": "AhGgD"
+}
+
+### careful with POST, do not add an empty line before the headers
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "th",
+  "password": "aHgGd"
+}
+
+### careful with POST, do not add an empty line before the headers
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "thomas",
+  "password": "p4sdfg"
+}

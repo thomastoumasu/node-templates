@@ -1,0 +1,1 @@
+solution and manual store differently in db  so have to reset db (path: see .env) manually before changing
