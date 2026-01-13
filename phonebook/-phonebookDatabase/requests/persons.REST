@@ -1,0 +1,45 @@
+GET http://localhost:3001/info
+###
+
+GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/api/persons/2
+
+###
+GET http://localhost:3001/api/persons/100
+
+###
+GET http://localhost:3001/apii0
+
+###
+DELETE http://localhost:3001/api/persons/2
+
+### careful with POST, do not add an empty line before the headers
+POST http://localhost:3001/api/persons/ 
+Content-Type: application/json
+
+{
+  "name": "Willow Willy",
+  "number": "6458795-12"
+}
+
+###
+POST http://localhost:3001/api/persons/ 
+Content-Type: application/json
+
+{
+  "name": "",
+  "number": "6458795-12"
+}
+
+###
+POST http://localhost:3001/api/persons/ 
+Content-Type: application/json
+
+{
+  "name": "Willy Wallow",
+  "number": ""
+}
+
+###
