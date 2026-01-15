@@ -19,3 +19,7 @@
 
 - minBackend: in one file, to start from scratch
 - stable CRUD backend structure with middleware and tests
+
+## minimal visualization of html
+
+- minPage visualize
