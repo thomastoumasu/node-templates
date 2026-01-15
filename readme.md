@@ -9,3 +9,8 @@
 
 - currency
 - countries (with two apis)
+
+## minimal React frontend setup with json server
+
+- minFrontEnd: just fetch and display db data as list
+- minFrontend_unicafe: simple Buttons

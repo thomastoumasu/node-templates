@@ -1,0 +1,20 @@
+{
+  "blogs": [
+    {
+      "title": "blog2",
+      "author": "t2t2---",
+      "url": "testURL",
+      "likes": 2,
+      "user": "",
+      "id": "68a4be1e7831d06e9a23e7ac"
+    },
+    {
+      "title": "blog1",
+      "author": "t1t1",
+      "url": "testURL",
+      "likes": 1,
+      "user": "",
+      "id": "68a5696f0082a524493bf1a1"
+    }
+  ]
+}
