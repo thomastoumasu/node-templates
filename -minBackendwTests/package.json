@@ -1,0 +1,36 @@
+{
+  "name": "bloglist",
+  "version": "0.0.1",
+  "description": "from part 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test node --test",
+    "testselection": "cross-env NODE_ENV=test node  --test --test-only",
+    "dev": "cross-env NODE_ENV=development node --watch index.js",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "lint": "eslint ."
+  },
+  "scriptsComments": {
+    "test": "NODE_ENV used in config.js to select Mongodb key",
+    "testselection": "only tests marked with only - do not forget to remove them",
+    "dev": "watch: make the server track changes, changes to the application's code will cause the server to restart automatically",
+    "start": "cross-env: so that the command also works in Windows",
+    "lint": "npm install eslint @eslint/js --save-dev ///// npm install --save-dev @stylistic/eslint-plugin-js //// eslint.config.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@stylistic/eslint-plugin-js": "^4.4.1",
+    "eslint": "^9.32.0",
+    "supertest": "^7.1.4"
+  },
+  "dependencies": {
+    "cross-env": "^10.0.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.0",
+    "morgan": "^1.10.1"
+  }
+}
