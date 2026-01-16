@@ -18,8 +18,21 @@
 ## minimal express backend with db
 
 - minBackend: in one file, to start from scratch
-- stable CRUD backend structure with middleware and tests
+- minBackendwTests: stable CRUD backend structure with middleware and tests
+
+## Complex state management: redux, context and reactQuery
+
+- stateMgmt: avoid prop drilling, synchronize with server data (reactQuery)
+
+## minimal React router and hooks
+
+- minRouterHooks_anecdotes
+- see also [hooks](https://github.com/thomastoumasu/Fullstack_submission/tree/main/part7/ultimate-hooks)
 
 ## minimal visualization of html
 
-- minPage visualize
+- minPage
+
+## simple js and React snippets
+
+- snippets
